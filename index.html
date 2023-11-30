@@ -11,6 +11,12 @@
     <title>Calculator</title>
 </head>
 
+<script>
+    function openAbtMe() {
+        window.open('https://github.com/A-nshuman', '_blank')
+    }
+</script>
+
 <body>
     <!-- <h1>Calculator</h1> -->
     <div class="calcBody">
@@ -18,16 +24,11 @@
             <div class="screenDisp"></div>
             <div class="screenIcons">
                 <button class="btn" id="clear">C</button>
-                <button class="btn" id="longBtn">A-nshuman</button>
+                <button class="btn" id="longBtn" onclick="openAbtMe()">A-nshuman</button>
                 <button class="btn material-symbols-outlined" id="backSpace">backspace</button>
             </div>
         </div>
         <div class="buttons">
-            <!-- <div class="row row1">
-                <button class="btn" id="clear">C</button>
-                <button class="btn" id="longBtn" style="font-size:15px;">A-nshuman</button>
-                <button class="btn material-symbols-outlined" id="backSpace">backspace</button>
-            </div> -->
             <div class="row">
                 <button class="btn" id="bracket">()</button>
                 <button class="btn" id="plus-minus">±</button>

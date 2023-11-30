@@ -39,6 +39,7 @@ body .calcBody .screen {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
+  overflow: hidden;
   margin-block-end: 10px;
   box-shadow: inset -3px -3px 15px #f5f5f5, inset 3px 3px 15px #bbc3cc;
 }
@@ -72,6 +73,23 @@ body .calcBody .screen .screenIcons {
   background-color: rgba(245, 245, 245, 0.6352941176);
   box-shadow: inset -3px -3px 15px #f5f5f5, inset 3px 3px 15px #bbc3cc;
   background-blend-mode: color-burn;
+}
+@keyframes rgbAnim {
+  0% {
+    background-color: hsl(197, 97%, 66%);
+  }
+  25% {
+    background-color: hsl(114, 100%, 65%);
+  }
+  50% {
+    background-color: hsl(348, 83%, 81%);
+  }
+  75% {
+    background-color: hsl(270, 90%, 65%);
+  }
+  100% {
+    background-color: hsl(0, 90%, 65%);
+  }
 }
 body .calcBody .screen .screenIcons button {
   border-radius: 10px;
@@ -132,8 +150,12 @@ body .buttons .row .btn:hover {
   }
   50% {
     transform: scale(0.9);
+    filter: drop-shadow(0 0 0 rgb(225, 119, 34));
   }
   100% {
     transform: scale(1);
   }
+}
+body .buttons .row .btn:focus {
+  outline: none;
 }/*# sourceMappingURL=style.css.map */

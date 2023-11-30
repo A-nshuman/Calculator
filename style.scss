@@ -47,7 +47,7 @@ body {
             flex-direction: column;
             justify-content: flex-end;
             align-items: flex-end;
-            // gap: 20px;
+            overflow: hidden;
             margin-block-end: 10px;
             box-shadow: inset -3px -3px 15px #f5f5f5, inset 3px 3px 15px #bbc3cc;
 
@@ -97,6 +97,29 @@ body {
                 background-color: #f5f5f5a2;
                 box-shadow: inset -3px -3px 15px #f5f5f5, inset 3px 3px 15px #bbc3cc;
                 background-blend-mode: color-burn;
+                // animation: rgbAnim 10s infinite alternate;
+
+                @keyframes rgbAnim {
+                    0% {
+                        background-color: hsl(197, 97%, 66%, 1);
+                    }
+
+                    25% {
+                        background-color: hsl(114, 100%, 65%);
+                    }
+
+                    50% {
+                        background-color: hsl(348, 83%, 81%, 1);
+                    }
+
+                    75% {
+                        background-color: hsl(.75turn, 90%, 65%);
+                    }
+
+                    100% {
+                        background-color: hsl(1turn, 90%, 65%);
+                    }
+                }
 
                 button {
                     border-radius: 10px;
@@ -152,14 +175,11 @@ body {
                 align-items: center;
                 justify-content: center;
                 box-shadow: -3px -3px 7px #f5f5f5, 3px 3px 7px #bbc3cc;
-                // box-shadow: -3px -3px 7px #181818, 3px 3px 7px #4e5155;
                 transition: all 0.2s ease-in-out;
 
                 &:hover {
                     box-shadow: inset -3px -3px 7px #f5f5f5, inset 3px 3px 7px #bbc3cc;
                     scale: 0.95;
-                    // animation: buttonHover 0.3s ease-in-out forwards;
-                    // box-shadow: inset -3px -3px 7px #181818, inset 3px 3px 7px #4e5155;
 
                     @keyframes buttonPress {
                         0% {
@@ -168,12 +188,17 @@ body {
 
                         50% {
                             transform: scale(0.9);
+                            filter: drop-shadow(0 0 0 rgb(225, 119, 34));
                         }
 
                         100% {
                             transform: scale(1);
                         }
                     }
+                }
+
+                &:focus {
+                    outline: none;
                 }
             }
         }
