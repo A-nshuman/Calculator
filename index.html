@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Calculator</title>
 </head>
+
 <body>
-    <h1>Calculator</h1>
+    <!-- <h1>Calculator</h1> -->
     <div class="calcBody">
-        <div class="screen"></div>
-        <div class="buttons">
-            <div class="row">
+        <div class="screen">
+            <div class="screenDisp"></div>
+            <div class="screenIcons">
                 <button class="btn" id="clear">C</button>
+                <button class="btn" id="longBtn">A-nshuman</button>
+                <button class="btn material-symbols-outlined" id="backSpace">backspace</button>
+            </div>
+        </div>
+        <div class="buttons">
+            <!-- <div class="row row1">
+                <button class="btn" id="clear">C</button>
+                <button class="btn" id="longBtn" style="font-size:15px;">A-nshuman</button>
+                <button class="btn material-symbols-outlined" id="backSpace">backspace</button>
+            </div> -->
+            <div class="row">
                 <button class="btn" id="bracket">()</button>
+                <button class="btn" id="plus-minus">±</button>
                 <button class="btn arith" id="percentage">%</button>
                 <button class="btn arith" id="divide">÷</button>
             </div>
@@ -28,7 +44,7 @@
                 <button class="btn nums">4</button>
                 <button class="btn nums">5</button>
                 <button class="btn nums">6</button>
-                <button class="btn arith" id="subtract">−</button>
+                <button class="btn arith" id="subtract">-</button>
             </div>
             <div class="row">
                 <button class="btn nums">1</button>
@@ -37,12 +53,12 @@
                 <button class="btn arith" id="add">+</button>
             </div>
             <div class="row">
-                <button class="btn" id="plus-minus">±</button>
-                <button class="btn nums">0</button>
+                <button class="btn nums" id="longBtn">0</button>
                 <button class="btn" id="period">.</button>
                 <button class="btn" id="equal-to">=</button>
             </div>
         </div>
     </div>
 </body>
+
 </html>
