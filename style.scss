@@ -27,7 +27,7 @@ body {
     .calcBody {
         background-color: #f5f5f5;
         backdrop-filter: blur(10px);
-        box-shadow: -3px -3px 15px #f5f5f5, 3px 3px 15px #bbc3cc;
+        box-shadow: inset -3px -3px 15px #f5f5f5, 3px 3px 15px #bbc3cc;
         padding: 20px;
         border-radius: 10px;
         width: 230px;
@@ -36,6 +36,9 @@ body {
         align-items: center;
         justify-content: center;
         gap: 15px;
+        // border: 5px solid #E5E4E2;
+        filter: drop-shadow(-10px -10px 50px #E5E4E2);
+        // filter: drop-shadow(10px 10px 10px #E5E4E2);
 
         .screen {
             border-radius: 10px;
@@ -174,11 +177,15 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                box-shadow: -3px -3px 7px #f5f5f5, 3px 3px 7px #bbc3cc;
+                box-shadow: inset -3px -3px 7px #f5f5f5, 3px 3px 7px #bbc3cc;
+                // box-shadow: -3px -3px 7px #f5f5f5, 3px 3px 7px #bbc3cc;
+                // box-shadow: -3px -3px 7px rgba(255, 255, 255, 0.5), 3px 3px 7px rgba(0, 0, 0, 0.5);
                 transition: all 0.2s ease-in-out;
 
                 &:hover {
-                    box-shadow: inset -3px -3px 7px #f5f5f5, inset 3px 3px 7px #bbc3cc;
+                    box-shadow: -3px -3px 7px #f5f5f5, inset 3px 3px 7px #bbc3cc;
+                    // box-shadow: inset -3px -3px 7px #f5f5f5, inset 3px 3px 7px #bbc3cc;
+                    background-color: #E5E4E2;
                     scale: 0.95;
 
                     @keyframes buttonPress {
@@ -188,7 +195,9 @@ body {
 
                         50% {
                             transform: scale(0.9);
-                            filter: drop-shadow(0 0 0 rgb(225, 119, 34));
+                            // filter: drop-shadow(0 0 0 rgb(225, 119, 34));
+                            background-color: rgba($color: #E5E4E2, $alpha: 0.5);
+                            box-shadow: 0 0 1px #E5E4E2, inset 0 0 10px #E5E4E2;
                         }
 
                         100% {

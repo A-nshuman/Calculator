@@ -38,6 +38,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    if (parseInt(display.style.width) > 210) {
+        display.overflow = 'scroll';
+    }
+
     equal.addEventListener('click', () => {
         var correctedString = display.innerHTML.replace(/×/g, '*').replace(/÷/g, '/').replace(/%/g, '/100*');
         display.innerHTML = eval(correctedString);
