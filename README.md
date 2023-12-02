@@ -1,4 +1,4 @@
-# [Calculator <img src="images/logo.png" alt="Calculator Logo" width="30">](https://acalc.netlify.app)
+# [<img src="images/logo.png" alt="Calculator Logo" width="30"> Calculator](https://acalc.netlify.app)
 
 ![GitHub top language](https://img.shields.io/github/languages/top/A-nshuman/Calculator?color=rgb(247,223,30))
 ![GitHub repo size](https://img.shields.io/github/repo-size/A-nshuman/Calculator?color=darkgreen)
